@@ -1,4 +1,4 @@
- this function inserts a 'Pause' Message every 90 trials; check overview.html for their position
+// this function inserts a 'Pause' Message every 90 trials; check overview.html for their position
  function modifyRunningOrder(ro) {
      for (var i = 1; i < ro.length; ++i) {
          if (i % 90 == 0) {
@@ -409,7 +409,7 @@ var items = [
 [["critical_noncond_pos-p",110], f, {html: {include: "110_non-cond_pos-p.html"}}],
 [["critical_wenn_pos-p",111], f, {html: {include: "111_wenn_pos-p.html"}}],
 [["critical_nurwenn_pos-p",111], f, {html: {include: "111_nur-wenn_pos-p.html"}}],
-[["critical_noncond_pos-p",111], f, {html: {include: "11_non-cond_pos-p.html"}}],
+[["critical_noncond_pos-p",111], f, {html: {include: "111_non-cond_pos-p.html"}}],
 [["critical_wenn_pos-p",112], f, {html: {include: "112_wenn_pos-p.html"}}],
 [["critical_nurwenn_pos-p",112], f, {html: {include: "112_nur-wenn_pos-p.html"}}],
 [["critical_noncond_pos-p",112], f, {html: {include: "112_non-cond_pos-p.html"}}],
