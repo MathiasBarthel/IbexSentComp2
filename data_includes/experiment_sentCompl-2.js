@@ -13,7 +13,7 @@
 //     return ro;
 // }
 
-var shuffleSequence = seq("intro", "setcounter", "sep2", sepWith("sep2", randomize("practice")), "end_practice", "sep2", sepWith("sep2", followEachWith("certainty-rating", randomize(startsWith("critical"))))), "contacts", "sendResults", "exit");
+var shuffleSequence = seq("intro", "sep2", sepWith("sep2", randomize("practice")), "end_practice", "sep2", sepWith("sep2", followEachWith("certainty-rating", randomize(startsWith("critical")))), "contacts", "sendResults", "exit");
 
 var manualSendResults = true;
 var showProgressBar = false;
@@ -66,11 +66,11 @@ var items = [
 
 ["certainty-rating", "AcceptabilityJudgment", {s: "Wie sicher warst du dir mit diesem Satzende?", q: "Drücke eine Ziffer auf der Tastatur um eine Antwort zu geben."}],
 
-["intro", "Message", {consentRequired: true, html: {include: "Intro_1_sent-compl_EEG.html" }, consentMessage: "Hiermit bestätige ich, dass ich die Studienvoraussetzungen erfülle und erkläre mich bereit, an der Studie teilzunehmen.", continueMessage: "Weiter"}],
-["intro", "Form", {consentRequired: false, continueMessage: "Weiter", html: {include: "Intro_sent-compl_German_Subject_Information.html" }, saveReactionTime: false, hideProgressBar: true}],
-["intro", "Message", {consentRequired: false, continueMessage: "Weiter", html: {include: "Intro_2_sent-comp_German.html" }}],
+//["intro", "Message", {consentRequired: true, html: {include: "Intro_1_sent-compl_EEG.html" }, consentMessage: "Hiermit bestätige ich, dass ich die Studienvoraussetzungen erfülle und erkläre mich bereit, an der Studie teilzunehmen.", continueMessage: "Weiter"}],
+//["intro", "Form", {consentRequired: false, continueMessage: "Weiter", html: {include: "Intro_sent-compl_German_Subject_Information.html" }, saveReactionTime: false, hideProgressBar: true}],
+//["intro", "Message", {consentRequired: false, continueMessage: "Weiter", html: {include: "Intro_2_sent-comp_German.html" }}],
 //["contacts", "Form", {consentRequired: true, continueMessage: "Weiter", html: {include: "contacts_sent-comp_German.html" }, saveReactionTime: false, hideProgressBar: true}],
-["exit", "Message", {consentRequired: false, html: {include: "exit_sent-comp_German.html" }, transfer: null}],
+//["exit", "Message", {consentRequired: false, html: {include: "exit_sent-comp_German.html" }, transfer: null}],
 
 //["sep", "Separator", {transfer: 500, normalMessage: ""}],
 ["sep2", "Separator", {transfer: 1000, normalMessage: "+"}],
