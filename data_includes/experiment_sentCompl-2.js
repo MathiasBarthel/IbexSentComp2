@@ -13,7 +13,7 @@
 //     return ro;
 // }
 
-var shuffleSequence = seq("intro", "setcounter", "sep2", sepWith("sep2", rshuffle("practice")), "end_practice", "sep2", sepWith("sep2", followEachWith("certainty-rating", rshuffle(startsWith("critical"))))), "contacts", "sendResults", "exit");
+var shuffleSequence = seq("intro", "setcounter", "sep2", sepWith("sep2", randomize("practice")), "end_practice", "sep2", sepWith("sep2", followEachWith("certainty-rating", randomize(startsWith("critical"))))), "contacts", "sendResults", "exit");
 
 var manualSendResults = true;
 var showProgressBar = false;
