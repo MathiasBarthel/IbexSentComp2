@@ -1,7 +1,7 @@
 // this function inserts a 'Pause' Message every 90 trials; check overview.html for their position
  function modifyRunningOrder(ro) {
-     for (var i = 0; i < ro.length; ++i) {
-         if (i % 90 == 0) {
+     for (var i = 1; i < ro.length; ++i) {
+         if (i % 89 == 0) {
              // Passing 'true' as the third argument casues the results from this controller to be omitted from the results file.
              ro[i].push(new DynamicElement(
                  "Message",
