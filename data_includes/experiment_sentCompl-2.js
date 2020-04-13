@@ -96,7 +96,7 @@ var items = [
 
     ["end_practice", "Message", {consentRequired: false, transfer: "keypress",
                     html: ["div",
-                          ["p", "Die Übungsphase ist nun beendet. Die folgenden Sätze vervollständignen Sie selbst. Bitte geben Sie jeweis das erstbeste Satzende ein, das Ihnen einfällt und drücken Sie Enter. Es wird in der Mitte des Experiments einen Pausebildschirm geben. Bitte achten Sie darauf, dass Sie das Experiment ungestört und konzentriert machen können. Wenn Sie bereit sind, drücken Sie Enter, um fortzufahren."],
+                          ["p", "Die Übungsphase ist nun beendet. Die folgenden Sätze vervollständigen Sie selbst. Bitte geben Sie jeweis das erstbeste Satzende ein, das Ihnen einfällt und drücken Sie Enter. Es wird in der Mitte des Experiments einen Pausebildschirm geben. Bitte achten Sie darauf, dass Sie das Experiment ungestört und konzentriert machen können. Wenn Sie bereit sind, drücken Sie Enter, um fortzufahren."],
                           ]}],
                           
 [["critical_wenn_neg-p",1], f, {html: {include: "001_wenn_neg-p.html"}}],
